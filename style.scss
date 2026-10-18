@@ -1,0 +1,66 @@
+$background-prime: #dfdfdf;
+*{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url('/images/img.png');
+  background-size: cover ;
+  background-repeat: no-repeat ;
+  background-position: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: 200px 650px 400px;
+  justify-content: center;
+}
+.canvas{
+  border: 2px solid black;
+}
+.sidebar{
+  text-align: center;
+  background-color: $background-prime;
+  border: none;
+  box-shadow: -4px 0 0 0 black, 4px 0 0 0 black, 0 -4px 0 0 black, 0 4px 0 0 black;
+  margin: 4px;
+
+  .name-game{
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    width: fit-content;
+    margin-bottom: 20px;
+
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  .dropdown-btn {
+    cursor: pointer;
+  }
+}
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+
+}
+.dropdown-content.show {
+  display: flex;
+}
+.level-item:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PingPongGame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <div class="container">
+        <div class="score">
+            Score
+        </div>
+        <canvas class="canvas" id="canvas">
+        </canvas>
+        <div class="sidebar">
+            <h1 class="name-game"> Ping Pong Game</h1>
+            <div class="menu">
+                <button class="btn-menu" id="start-game">Start</button>
+                <button class="btn-menu" id="pause-game">Pause</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn" id="levelBtn">Choose level <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content" id="levelContent">
+                        <button class="level-item" id="level_1">Level 1</button>
+                        <button class="level-item" id="level_2">Level 2</button>
+                        <button class="level-item" id="level_3">Level 3</button>
+                        <button class="level-item" id="level_4">Level 4</button>
+                        <button class="level-item" id="level_5">Level 5</button>
+                        <button class="level-item" id="level_6">Level 6</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
